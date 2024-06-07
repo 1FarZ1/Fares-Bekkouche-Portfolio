@@ -1,5 +1,3 @@
-declare var Swiper: any;
-
 export function initializeSwiper() {
     new Swiper('.swiper-container', {
         loop: true,

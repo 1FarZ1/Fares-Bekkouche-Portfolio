@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "@types/swiper": "^6.0.0"
   }
 }
