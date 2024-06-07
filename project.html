@@ -7,62 +7,58 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="./styles/theme-switcher.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <style>
+        .locked {
+            color: gray;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
         .swiper-container {
-    width: 100%;
-    height: 100%;
-}
+            width: 100%;
+            height: 400px;
+            /* fix the 2 view issue */
+            overflow: hidden;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
+        }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
 
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: #000;
-}
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
 
-.swiper-pagination-bullet-active {
-    background: #007aff;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #000;
-}
+        .swiper-slide img {
+            width: auto;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
     <div id="container--main">
         <a href="index.html">&#x2190; Go Back</a>
-        <div id="project-content">
-        </div>
+        <div id="project-content"></div>
     </div>
 
     <script>
+
+        
         const projects = {
             "viralBetApp": {
                 title: "Viral Bet App - Developed a game betting application",
@@ -184,21 +180,33 @@
                     ${project.details.map(detail => `<li>${detail}</li>`).join('')}
                 </ul>
                 <div class="swiper-container">
-    <div class="swiper-wrapper">
-        ${project.images.map(image => `<div class="swiper-slide"><img src="assets/apps/${image}" alt="Project Image"></div>`).join('')}
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
+                    <div class="swiper-wrapper">
+                        ${project.images.map(image => `<div class="swiper-slide"><img src="assets/apps/${image}" alt="Project Image"></div>`).join('')}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             `;
             document.getElementById("project-content").innerHTML = content;
+
         }
 
         const projectKey = window.location.hash.substring(1);
         loadProject(projectKey);
+        setTimeout(function() {
+        new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }, 2000);
     </script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./js/theme-switcher.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
