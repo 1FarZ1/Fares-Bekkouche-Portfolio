@@ -7,37 +7,58 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <style>
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-            margin: 20px 0;
-        }
+        .swiper-container {
+    width: 100%;
+    height: 100%;
+}
 
-        .carousel img {
-            width: 100%;
-            height: auto;
-            scroll-snap-align: center;
-            /* make each image take all the carousel page  */
-            margin : 0 50px;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
-        }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-        .locked {
-            color: gray;
-            text-decoration: none;
-            pointer-events: none;
-        }
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #000;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+}
     </style>
 </head>
 <body>
     <div id="container--main">
         <a href="index.html">&#x2190; Go Back</a>
         <div id="project-content">
-            <!-- Project content will be loaded here dynamically -->
         </div>
     </div>
 
@@ -140,7 +161,6 @@
                     "EBUILDING.png",
                 ]
             },
-            // Add more projects as needed
         };
 
         function loadProject(projectKey) {
@@ -163,16 +183,22 @@
                 <ul>
                     ${project.details.map(detail => `<li>${detail}</li>`).join('')}
                 </ul>
-                <div class="carousel">
-                    ${project.images.map(image => `<img src="assets/apps/${image}" alt="Project Image">`).join('')}
-                </div>
+                <div class="swiper-container">
+    <div class="swiper-wrapper">
+        ${project.images.map(image => `<div class="swiper-slide"><img src="assets/apps/${image}" alt="Project Image"></div>`).join('')}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
             `;
             document.getElementById("project-content").innerHTML = content;
         }
 
-        // Get the project key from the URL hash
         const projectKey = window.location.hash.substring(1);
         loadProject(projectKey);
     </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/theme-switcher.js"></script>
 </body>
 </html>
