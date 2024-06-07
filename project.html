@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects & Accomplishments</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px 0;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            scroll-snap-align: center;
+            /* make each image take all the carousel page  */
+            margin : 0 50px;
+
+        }
+
+        .locked {
+            color: gray;
+            text-decoration: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container--main">
+        <a href="index.html">&#x2190; Go Back</a>
+        <div id="project-content">
+            <!-- Project content will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <script>
+        const projects = {
+            "viralBetApp": {
+                title: "Viral Bet App - Developed a game betting application",
+                demoLink: "https://viral-bet.com",
+                codeLink: "#",
+                sourceType: "closed",
+                hasDemo: true,
+                description: "Built the user app using Flutter and Riverpod, and the backend using NestJS, ensuring scalability and following best practices.",
+                details: [
+                    "Developed the frontend using Flutter and Riverpod.",
+                    "Backend built with NestJS for scalability.",
+                    "Followed industry best practices in development."
+                ],
+                images: [
+                    "v1.png",
+                    "v2.png",
+                    "v3.png",
+                    "v4.png",
+                    "v5.png",
+                ]
+            },
+            "ouhraniaagtou": {
+                title: "Ouhraniaagtou - Market eCommerce Application",
+                demoLink: "#",
+                codeLink: "#",
+                sourceType: "closed",
+                hasDemo: false,
+                description: "Created a market eCommerce application and its delivery app using Flutter and Provider, following the best coding principles.",
+                details: [
+                    "Developed the frontend using Flutter and Provider.",
+                    "Ensured best coding practices were followed.",
+                    "Includes a delivery app for efficient order management."
+                ],
+                images: [
+                    "ouhraniagrou.png",
+                    "ouhraniagrou delivery.png"
+                ]
+            },
+            "btpWin": {
+                title: "BTP Win - Developed a BTP app",
+                demoLink: "#",
+                codeLink: "#",
+                sourceType: "open",
+                hasDemo: false,
+                description: "Developed a BTP app using Flutter and Riverpod.",
+                details: [
+                    "Frontend built with Flutter and Riverpod."
+                ],
+                images: [
+                    "btp.png"
+                ]
+            },
+            "animeDragon": {
+                title: "Anime Dragon - Full-stack anime streaming app",
+                demoLink: "#",
+                codeLink: "#",
+                sourceType: "open",
+                hasDemo: true,
+                description: "Built a full-stack anime streaming app. Frontend with Flutter and Riverpod, backend with NestJS.",
+                details: [
+                    "Frontend developed with Flutter and Riverpod.",
+                    "Backend created using NestJS."
+                ],
+                images: [
+                    "animeDragon1.png",
+                    "animeDragon2.png"
+                ]
+            },
+            "lawyerAppointment": {
+                title: "Lawyer Appointment Backend - App for lawyer appointments",
+                demoLink: "#",
+                codeLink: "#",
+                sourceType: "open",
+                hasDemo: false,
+                description: "Created an app to make appointments with lawyers and provide recommendations. Built using FastAPI.",
+                details: [
+                    "Backend developed with FastAPI.",
+                    "Features lawyer appointment scheduling and recommendations."
+                ],
+                images: [
+                    ""
+                ]
+            },
+            "ebuildingDz": {
+                title: "Ebuilding DZ App - Matching service providers with clients",
+                demoLink: "#",
+                codeLink: "#",
+                sourceType: "closed",
+                hasDemo: false,
+                description: "Developed an app that matches service providers with clients, featuring a modern UI and best practices. Built using Flutter and Riverpod.",
+                details: [
+                    "Frontend created with Flutter and Riverpod.",
+                    "Modern UI design and best practices implemented."
+                ],
+                images: [
+                    "EBUILDING.png",
+                ]
+            },
+            // Add more projects as needed
+        };
+
+        function loadProject(projectKey) {
+            const project = projects[projectKey];
+            if (!project) {
+                document.getElementById("project-content").innerHTML = "<p>Project not found.</p>";
+                return;
+            }
+
+            const sourceLink = project.sourceType === "open" ? `<a href="${project.codeLink}">Source Code</a>` : '<span class="locked">Source Code (Closed)</span>';
+            const demoLink = project.hasDemo ? `<a href="${project.demoLink}">Live Demo</a>` : '<span class="locked">Live Demo (Not Available)</span>';
+
+            const content = `
+                <h1>${project.title}</h1>
+                <ul>
+                    <li>${demoLink}</li>
+                    <li>${sourceLink}</li>
+                </ul>
+                <p>${project.description}</p>
+                <ul>
+                    ${project.details.map(detail => `<li>${detail}</li>`).join('')}
+                </ul>
+                <div class="carousel">
+                    ${project.images.map(image => `<img src="assets/apps/${image}" alt="Project Image">`).join('')}
+                </div>
+            `;
+            document.getElementById("project-content").innerHTML = content;
+        }
+
+        // Get the project key from the URL hash
+        const projectKey = window.location.hash.substring(1);
+        loadProject(projectKey);
+    </script>
+</body>
+</html>

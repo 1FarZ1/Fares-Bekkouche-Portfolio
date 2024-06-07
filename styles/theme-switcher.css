@@ -1,0 +1,43 @@
+#theme-switcher{
+    position: fixed;
+    right:1em;
+    top: 1em;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.theme{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid;
+}
+
+.theme:hover{
+    height: 33px;
+    width: 33px;
+}
+
+#theme-dark{
+    background-color: #000;
+    /* border-color: #fff; */
+}
+
+#theme-light{
+    background-color: #fff;
+    /* border-color: #000; */
+}
+
+#theme-1{
+    background-color: #999ECD;
+}
+
+#theme-2{
+    background-color: #73B5DE;
+}
+
+#theme-3{
+    background-color: #AD7EAD;
+}
