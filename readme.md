@@ -7,7 +7,8 @@
 
 - Html
 - CSS
-- Javascript
+- Typescript
+
 
 ## About me
 
