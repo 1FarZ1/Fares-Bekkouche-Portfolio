@@ -3,7 +3,7 @@ import { projects } from "./projects.js";
 export function loadProjects(): void {
   try {
     // Get the projects section
-    const projectsSection = document.querySelector('.section--page:last-of-type');
+    const projectsSection = document.getElementById('projects-wrapper');
     
     if (!projectsSection) {
       throw new Error('Projects section not found');
