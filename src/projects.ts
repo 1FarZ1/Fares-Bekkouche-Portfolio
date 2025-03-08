@@ -73,6 +73,7 @@ export const projects = {
         hasDemo: true,
         description: "Developed a comprehensive quiz platform for baccalaureate students with in-app payments and multiple study tools.",
         details: [
+            //TODO
             "Implemented a modern, engaging UI with interactive quiz interfaces",
             "Created multiple quiz types with all logic handled client-side for optimal performance",
             "Integrated productivity tools including grade calculator and pomodoro timer",
@@ -82,10 +83,7 @@ export const projects = {
             "Implemented subject categorization with customizable study paths"
         ],
         images: [
-            "tayssir/dashboard.png",
-            "tayssir/quiz.png",
-            "tayssir/progress.png",
-            "tayssir/tools.png"
+            "tayssir/fg.png",
         ]
     },
     "btpWin": {
