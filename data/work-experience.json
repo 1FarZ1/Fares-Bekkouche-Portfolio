@@ -1,0 +1,50 @@
+[
+  {
+    "title": "📱 FULL STACK MOBILE DEVELOPER | FIVERR",
+    "period": "2021 - 2024",
+    "description": "Worked as a Full Stack Mobile Developer, building numerous apps and providing custom solutions to clients on Fiverr. Key achievements include:",
+    "achievements": [
+      "Developed and deployed over 5 mobile applications for various clients.",
+      "Specialized in Flutter for frontend development and Nest.js.Asp .Net for backend services.",
+      "Received consistently high ratings and positive feedback from clients."
+    ]
+  },
+  {
+    "title": "💻 MOBILE AND BACKEND DEVELOPER | CREATECH",
+    "period": "8/2023 - 9/2024",
+    "description": "Currently working as a Mobile and Backend Developer at Createch. Responsibilities and achievements include:",
+    "achievements": [
+      "Tasked with building robust APIs and backend services for mobile applications.",
+      "Developing frontend using Flutter and integrating with backend services.",
+      "Ensured code quality and scalability through best practices and comprehensive testing.",
+      "Collaborated with frontend developers to integrate backend services seamlessly.",
+      "Played a key role in the architecture and deployment of scalable backend systems."
+    ]
+  },
+  {
+    "title": "🔵 FLUTTER DEVELOPER | IT SOURCE ONE",
+    "period": "06/2024 - 08/2024",
+    "description": "Served as a Flutter Developer at IT Source One, contributing to multiple cutting-edge applications. Key responsibilities included:",
+    "achievements": [
+      "Played a pivotal role in developing an innovative Arabic language teaching application from concept to deployment.",
+      "Conducted comprehensive code reviews and maintained high code quality standards across multiple projects.",
+      "Spearheaded UI development initiatives, creating intuitive and responsive interfaces for enhanced user experience.",
+      "Implemented critical app functionality and complex features while ensuring optimal performance.",
+      "Collaborated cross-functionally with design and backend teams to deliver cohesive, feature-rich applications."
+    ]
+  }
+  ,
+  {
+    "title": "🚀 FLUTTER DEVELOPER | APPILO",
+    "period": "09/2024 - Present",
+    "description": "Worked as a Flutter Developer at Appilo, a software solution agency. Contributed to multiple projects while also participating in business decisions. Key responsibilities included:",
+    "achievements": [
+      "Developed responsive and intuitive mobile applications using Flutter framework",
+      "Participated in client meetings and provided technical input for business decisions",
+      "Collaborated cross-functionally with design and backend teams to deliver cohesive applications",
+      "Implemented complex features while ensuring optimal performance and code quality",
+      "Helped translate client requirements into technical specifications and solutions",
+      "Contributed to architecture decisions and technology stack selection for new projects"
+    ]
+  }
+]

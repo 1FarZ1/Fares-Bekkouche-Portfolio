@@ -11,10 +11,14 @@ Array.from(themes).forEach((theme) => {
 });
 function getThemeOnLoad() {
     const theme = localStorage.getItem("theme");
-    console.log(theme);
     const body = document.querySelector("body");
-    if (theme && body) {
-        body.setAttribute("data-theme", theme);
+    if (body) {
+        if (theme) {
+            body.setAttribute("data-theme", theme);
+        }
+        else {
+            body.setAttribute("data-theme", "dark");
+        }
     }
 }
 getThemeOnLoad();

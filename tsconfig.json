@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-      "target": "es2015",
-     "module": "es2015",
+    "target": "es2017",
+    "lib": ["dom", "es2017"],
+    "module": "es2015",
       "outDir": "./dist",
       "rootDir": "./src",
       "strict": false,
