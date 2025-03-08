@@ -37,11 +37,62 @@ export const projects = {
             "ouhraniagrou delivery.png"
         ]
     },
+    "equitas": {
+        title: "Equitas - Islamophobia Reporting Application",
+        demoLink: "#",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: true,
+        description: "Developed an application that helps Muslims report harmful acts through multiple reporting methods, while providing educational resources and assistance.",
+        details: [
+            "Implemented three reporting methods: form-based, geo-located, and live reporting.",
+            "Integrated educational articles with video content and filtering capabilities.",
+            "Built with modern UI design principles for enhanced user experience.",
+            "Utilized Firebase Firestore for database management and Firebase Storage for media content.",
+            "Implemented Firebase Cloud Messaging (FCM) for notifications.",
+            "Created background services to handle operations when app is minimized.",
+            "Integrated an AI-powered chatbot assistant to provide users with guidance."
+        ],
+        images: [
+            "equitas/1.png",
+            "equitas/2.png",
+            "equitas/3.png",
+            "equitas/4.png",
+            "equitas/5.png",
+            "equitas/6.png",
+            "equitas/7.png",
+            "equitas/8.png",
+            "equitas/9.png",
+        ]
+    },
+    "tayssir": {
+        title: "Tayssir - Baccalaureate Exam Preparation App",
+        demoLink: "#",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: true,
+        description: "Developed a comprehensive quiz platform for baccalaureate students with in-app payments and multiple study tools.",
+        details: [
+            "Implemented a modern, engaging UI with interactive quiz interfaces",
+            "Created multiple quiz types with all logic handled client-side for optimal performance",
+            "Integrated productivity tools including grade calculator and pomodoro timer",
+            "Built in-app payment system for premium content",
+            "Optimized for offline use by fetching questions during initial load",
+            "Designed progress tracking systems to help students monitor improvement",
+            "Implemented subject categorization with customizable study paths"
+        ],
+        images: [
+            "tayssir/dashboard.png",
+            "tayssir/quiz.png",
+            "tayssir/progress.png",
+            "tayssir/tools.png"
+        ]
+    },
     "btpWin": {
         title: "BTP Win - Developed a BTP app",
         demoLink: "#",
         codeLink: "#",
-        sourceType: "open",
+        sourceType: "closed",
         hasDemo: false,
         description: "Developed a BTP app using Flutter and Riverpod.",
         details: [
