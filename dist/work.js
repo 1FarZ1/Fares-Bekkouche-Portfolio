@@ -1,6 +1,6 @@
 export async function loadWorkExperience() {
     try {
-        const response = await fetch('../data/work-experience.json');
+        const response = await fetch('/Fares-Bekkouche-Portfolio/data/work-experience.json');
         console.log(response);
         if (!response.ok) {
             throw new Error(`Failed to load work experience data: ${response.status}`);

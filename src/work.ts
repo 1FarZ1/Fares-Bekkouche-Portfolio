@@ -7,7 +7,7 @@ interface WorkExperience {
   
   export async function loadWorkExperience(): Promise<void> {
     try {
-      const response = await fetch('../data/work-experience.json');
+      const response = await fetch('/Fares-Bekkouche-Portfolio/data/work-experience.json');
 
       console.log(response);
       
