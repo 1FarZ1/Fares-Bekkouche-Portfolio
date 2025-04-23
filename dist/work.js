@@ -1,6 +1,12 @@
 export async function loadWorkExperience() {
     try {
-        const response = await fetch('https://1farz1.github.io/Fares-Bekkouche-Portfolio/data/work-experience.json');
+        // Check if we're on GitHub Pages or local development
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        // Use appropriate path based on environment
+        const jsonPath = isGitHubPages
+            ? '/Fares-Bekkouche-Portfolio/data/work-experience.json'
+            : '/data/work-experience.json';
+        const response = await fetch(jsonPath);
         console.log(response);
         if (!response.ok) {
             throw new Error(`Failed to load work experience data: ${response.status}`);

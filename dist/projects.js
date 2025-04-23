@@ -39,7 +39,7 @@ export const projects = {
     },
     "equitas": {
         title: "Equitas - Islamophobia Reporting Application",
-        demoLink: "#",
+        demoLink: "https://play.google.com/store/apps/details?id=com.equitas.mobile",
         codeLink: "#",
         sourceType: "closed",
         hasDemo: true,
@@ -67,7 +67,7 @@ export const projects = {
     },
     "tayssir": {
         title: "Tayssir - Baccalaureate Exam Preparation App",
-        demoLink: "#",
+        demoLink: "https://play.google.com/store/apps/details?id=com.tayssir.bac",
         codeLink: "#",
         sourceType: "closed",
         hasDemo: true,
