@@ -7,7 +7,15 @@ interface WorkExperience {
   
   export async function loadWorkExperience(): Promise<void> {
     try {
-      const response = await fetch('https://1farz1.github.io/Fares-Bekkouche-Portfolio/data/work-experience.json');
+
+          // Check if we're on GitHub Pages or local development
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    
+    // Use appropriate path based on environment
+    const jsonPath = isGitHubPages 
+      ? '/Fares-Bekkouche-Portfolio/data/work-experience.json' 
+      : '/data/work-experience.json';
+      const response = await fetch(jsonPath);
 
       console.log(response);
       
