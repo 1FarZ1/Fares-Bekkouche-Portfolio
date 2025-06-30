@@ -1,7 +1,7 @@
 export const projects = {
     "viralBetApp": {
-        title: "Viral Bet App - Developed a game betting application",
-        demoLink: "https://viral-bet.com",
+        title: "Pronox App - Developed a game betting application",
+        demoLink: "https://play.google.com/store/apps/details?id=com.pronox.apk",
         codeLink: "#",
         sourceType: "closed",
         hasDemo: true,
