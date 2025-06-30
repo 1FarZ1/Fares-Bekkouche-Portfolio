@@ -103,7 +103,7 @@ export const projects = {
     "animeDragon": {
         title: "Anime Dragon - Full-stack anime streaming app",
         demoLink: "#",
-        codeLink: "#",
+        codeLink: "https://github.com/1FarZ1/Anime-Dragon-App",
         sourceType: "open",
         hasDemo: true,
         description: "Built a full-stack anime streaming app. Frontend with Flutter and Riverpod, backend with NestJS.",
