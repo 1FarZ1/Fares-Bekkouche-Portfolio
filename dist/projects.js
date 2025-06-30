@@ -1,7 +1,7 @@
 export const projects = {
     "viralBetApp": {
-        title: "Viral Bet App - Developed a game betting application",
-        demoLink: "https://viral-bet.com",
+        title: "Pronox App - Developed a game betting application",
+        demoLink: "https://play.google.com/store/apps/details?id=com.pronox.apk",
         codeLink: "#",
         sourceType: "closed",
         hasDemo: true,
@@ -103,7 +103,7 @@ export const projects = {
     "animeDragon": {
         title: "Anime Dragon - Full-stack anime streaming app",
         demoLink: "#",
-        codeLink: "#",
+        codeLink: "https://github.com/1FarZ1/Anime-Dragon-App",
         sourceType: "open",
         hasDemo: true,
         description: "Built a full-stack anime streaming app. Frontend with Flutter and Riverpod, backend with NestJS.",
