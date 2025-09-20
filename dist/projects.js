@@ -20,8 +20,33 @@ export const projects = {
             "v5.png",
         ]
     },
+    "MyFitTool": {
+        title: "MyFitTool - Advanced Fitness Tracking & Progress Enhancement App",
+        demoLink: "https://play.google.com/store/apps/details?id=com.myfittool.app",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: true,
+        description: "Developed a comprehensive fitness application using Flutter, Riverpod, and BLoC that tracks user fitness progress and enhances it over time with AI-powered features.",
+        details: [
+            "Built with Flutter framework using Riverpod and BLoC for state management.",
+            "Implemented complex exercise creation system with customizable workout routines.",
+            "Integrated AI-powered smart exercise recommendations based on user progress.",
+            "Developed comprehensive meal and nutrition tracking system.",
+            "Created advanced diagnostics system for fitness progress analysis.",
+            "Implemented sophisticated time management system for exercise scheduling.",
+            "Built with clean architecture principles ensuring maintainable and refactorable code.",
+            "Followed industry best practices for scalable mobile application development."
+        ],
+        images: [
+            "myfit1.png",
+            "myfit2.png",
+            "myfit3.png",
+            "myfit4.png",
+            "myfit5.png",
+        ]
+    },
     "ouhraniaagtou": {
-        title: "Ouhraniaagtou - Market eCommerce Application",
+        title: "Ouhraniaagrou - Market eCommerce Application",
         demoLink: "#",
         codeLink: "#",
         sourceType: "closed",
