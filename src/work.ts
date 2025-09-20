@@ -8,16 +8,13 @@ interface WorkExperience {
   export async function loadWorkExperience(): Promise<void> {
     try {
 
-          // Check if we're on GitHub Pages or local development
     const isGitHubPages = window.location.hostname.includes('github.io');
     
-    // Use appropriate path based on environment
     const jsonPath = isGitHubPages 
       ? '/Fares-Bekkouche-Portfolio/data/work-experience.json' 
       : '/data/work-experience.json';
       const response = await fetch(jsonPath);
 
-      console.log(response);
       
       if (!response.ok) {
         throw new Error(`Failed to load work experience data: ${response.status}`);
@@ -25,14 +22,12 @@ interface WorkExperience {
       
       const workExperiences: WorkExperience[] = await response.json();
       
-      // Get the work history wrapper element
       const workHistoryWrapper = document.getElementById('work-history-wrapper');
       
       if (!workHistoryWrapper) {
         throw new Error('Work history wrapper element not found');
       }
       
-      // Clear existing content except the heading
       const heading = workHistoryWrapper.querySelector('h2');
       workHistoryWrapper.innerHTML = '';
       
@@ -78,5 +73,4 @@ interface WorkExperience {
     }
   }
   
-  // Call the function when the DOM is fully loaded
   document.addEventListener('DOMContentLoaded', loadWorkExperience);
