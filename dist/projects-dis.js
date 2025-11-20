@@ -1,14 +1,11 @@
 import { projects } from "./projects.js";
 export function loadProjects() {
     try {
-        // Get the projects section
         const projectsSection = document.getElementById('projects-wrapper');
         if (!projectsSection) {
             throw new Error('Projects section not found');
         }
-        // Keep the heading
         const heading = projectsSection.querySelector('h2');
-        // Clear existing content except the heading
         projectsSection.innerHTML = '';
         if (heading) {
             projectsSection.appendChild(heading);
@@ -18,11 +15,9 @@ export function loadProjects() {
             newHeading.textContent = 'Projects & Accomplishments';
             projectsSection.appendChild(newHeading);
         }
-        // Create grid container
         const gridContainer = document.createElement('div');
         gridContainer.className = 'projects-grid';
         projectsSection.appendChild(gridContainer);
-        // Add CSS for grid layout to the document
         const styleElement = document.createElement('style');
         styleElement.textContent = `
       .projects-grid {
@@ -73,35 +68,29 @@ export function loadProjects() {
       }
     `;
         document.head.appendChild(styleElement);
-        // Generate HTML for each project
         for (const key in projects) {
             if (projects.hasOwnProperty(key)) {
                 const project = projects[key];
                 const cardDiv = document.createElement('div');
                 cardDiv.className = 'card--project';
-                // Create a link wrapper for the entire card
                 const link = document.createElement('a');
                 link.href = `./views/project.html#${key}`;
-                // Add image
                 const imageContainer = document.createElement('div');
                 const img = document.createElement('img');
-                // Use the first image from the images array or a placeholder
                 if (project.images && project.images.length > 0 && project.images[0] !== "") {
                     img.src = `./assets/apps/${project.images[0]}`;
                 }
                 else {
-                    img.src = "./assets/images/placeholder.png"; // Make sure to have a placeholder image
+                    img.src = "./assets/images/placeholder.png";
                 }
                 img.alt = project.title;
                 imageContainer.appendChild(img);
-                // Add content
                 const contentDiv = document.createElement('div');
                 contentDiv.className = 'project-content';
                 const title = document.createElement('h3');
                 title.textContent = project.title;
                 const description = document.createElement('p');
                 description.textContent = project.description;
-                // Add trophy icon
                 const trophy = document.createElement('span');
                 trophy.textContent = '🏆 ';
                 title.insertBefore(trophy, title.firstChild);
@@ -118,5 +107,4 @@ export function loadProjects() {
         console.error('Error loading projects:', error);
     }
 }
-// Call the function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadProjects);
