@@ -37,8 +37,13 @@
                 <h2>Skills & Qualifications</h2>
                 <ul id="qualifications--list">
                     <li>✔️ Computer Science Degree from Higher School of Computer Science and Information Technology of Bejaia, Algeria</li>
-                    <li>✔️ Two years of full-stack development experience, including building production-ready applications and scalable backend services</li>
-                    <li>✔️ Proficient in deploying applications to cloud services like AWS, Google Cloud, Heroku, and VPS</li>
+                    <li>✔️ <span id="years-experience"></span> years of full-stack development experience, including building production-ready applications and scalable backend services</li>
+                    <script>
+                        const startDate = new Date('2022-10-01');
+                        const now = new Date();
+                        const years = ((now - startDate) / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
+                        document.getElementById('years-experience').textContent = years;
+                    </script> <li>✔️ Proficient in deploying applications to cloud services like AWS, Google Cloud, Heroku, and VPS</li>
                     <li>✔️ Skilled in algorithm development and problem-solving</li>
                     <li>✔️ Experienced in team collaboration and project leadership</li>
                     <li>✔️ Familiar with git and GitHub</li>
