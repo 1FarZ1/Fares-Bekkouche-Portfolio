@@ -6,7 +6,7 @@ interface TechItem {
   export const techStack: TechItem[] = [
     {
       category: "Languages",
-      skills: "Dart, TypeScript, C#, Python"
+      skills: "Dart, TypeScript,Python,  C#, , JavaScript, SQL, HTML, CSS, "
     },
     {
       category: "Backend Frameworks",
@@ -22,11 +22,11 @@ interface TechItem {
     },
     {
       category: "Tools",
-      skills: "VS Code, Git, GitHub, Postman, Swagger"
+      skills: "VS Code, Git, GitHub,Postman, Swagger,Kaggle Docker,Jira,Slack"
     },
     {
       category: "Cloud & Hosting",
-      skills: "Heroku, AWS, Google Cloud, VPS"
+      skills: "Heroku, AWS, Google Cloud Platform, VPS"
     },
     {
       category: "Methodologies",
