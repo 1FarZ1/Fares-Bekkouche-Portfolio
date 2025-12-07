@@ -1,4 +1,25 @@
 export const projects = {
+    "tayssir": {
+        title: "Tayssir - Baccalaureate Exam Preparation App",
+        demoLink: "https://play.google.com/store/apps/details?id=com.tayssir.bac",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: true,
+        description: "Developed a comprehensive quiz platform for baccalaureate students with in-app payments and multiple study tools.",
+        details: [
+            //TODO
+            "Implemented a modern, engaging UI with interactive quiz interfaces",
+            "Created multiple quiz types with all logic handled client-side for optimal performance",
+            "Integrated productivity tools including grade calculator and pomodoro timer",
+            "Built in-app payment system for premium content",
+            "Optimized for offline use by fetching questions during initial load",
+            "Designed progress tracking systems to help students monitor improvement",
+            "Implemented subject categorization with customizable study paths"
+        ],
+        images: [
+            "tayssir/fg.png",
+        ]
+    },
     "viralBetApp": {
         title: "Pronox App - Developed a game betting application",
         demoLink: "https://play.google.com/store/apps/details?id=com.pronox.apk",
@@ -45,23 +66,6 @@ export const projects = {
             "myfit5.png",
         ]
     },
-    "ouhraniaagtou": {
-        title: "Ouhraniaagrou - Market eCommerce Application",
-        demoLink: "#",
-        codeLink: "#",
-        sourceType: "closed",
-        hasDemo: false,
-        description: "Created a market eCommerce application and its delivery app using Flutter and Provider, following the best coding principles.",
-        details: [
-            "Developed the frontend using Flutter and Provider.",
-            "Ensured best coding practices were followed.",
-            "Includes a delivery app for efficient order management."
-        ],
-        images: [
-            "ouhraniagrou.png",
-            "ouhraniagrou delivery.png"
-        ]
-    },
     "equitas": {
         title: "Equitas - Islamophobia Reporting Application",
         demoLink: "https://play.google.com/store/apps/details?id=com.equitas.mobile",
@@ -90,25 +94,21 @@ export const projects = {
             "equitas/9.png",
         ]
     },
-    "tayssir": {
-        title: "Tayssir - Baccalaureate Exam Preparation App",
-        demoLink: "https://play.google.com/store/apps/details?id=com.tayssir.bac",
+    "ouhraniaagtou": {
+        title: "Ouhraniaagrou - Market eCommerce Application",
+        demoLink: "#",
         codeLink: "#",
         sourceType: "closed",
-        hasDemo: true,
-        description: "Developed a comprehensive quiz platform for baccalaureate students with in-app payments and multiple study tools.",
+        hasDemo: false,
+        description: "Created a market eCommerce application and its delivery app using Flutter and Provider, following the best coding principles.",
         details: [
-            //TODO
-            "Implemented a modern, engaging UI with interactive quiz interfaces",
-            "Created multiple quiz types with all logic handled client-side for optimal performance",
-            "Integrated productivity tools including grade calculator and pomodoro timer",
-            "Built in-app payment system for premium content",
-            "Optimized for offline use by fetching questions during initial load",
-            "Designed progress tracking systems to help students monitor improvement",
-            "Implemented subject categorization with customizable study paths"
+            "Developed the frontend using Flutter and Provider.",
+            "Ensured best coding practices were followed.",
+            "Includes a delivery app for efficient order management."
         ],
         images: [
-            "tayssir/fg.png",
+            "ouhraniagrou.png",
+            "ouhraniagrou delivery.png"
         ]
     },
     "btpWin": {
