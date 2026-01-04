@@ -59,11 +59,9 @@ export const projects = {
             "Followed industry best practices for scalable mobile application development."
         ],
         images: [
-            "myfit1.png",
-            "myfit2.png",
-            "myfit3.png",
-            "myfit4.png",
-            "myfit5.png",
+            "myfit/1.jpeg",
+            "myfit/2.jpeg",
+         
         ]
     },
      "equitas": {
