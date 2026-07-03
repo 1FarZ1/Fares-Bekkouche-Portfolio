@@ -34,11 +34,11 @@ export const projects = {
             "Followed industry best practices in development."
         ],
         images: [
-            "v1.png",
-            "v2.png",
-            "v3.png",
-            "v4.png",
-            "v5.png",
+            "pronox/pronox1.webp",
+            "pronox/pronox2.webp",
+            "pronox/pronox3.webp",
+            "pronox/pronox4.webp",
+            "pronox/pronox5.webp",
         ]
     },
     "MyFitTool": {
