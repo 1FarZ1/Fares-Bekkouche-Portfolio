@@ -25,8 +25,8 @@ function loadProject(projectKey) {
                 ${project.images.map((image) => `<div class="swiper-slide"><img src="../assets/apps/${image}" alt="Project Image"></div>`).join('')}
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></div>
+            <div class="swiper-button-prev"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></div>
         </div>
     `;
     if (contentContainer) {

@@ -187,33 +187,146 @@ li{
 
 .swiper-container {
     width: 100%;
-    height: 400px;
-    /* fix the 2 view issue */
+    height: 500px;
     overflow: hidden;
+    border-radius: 12px;
+    margin: 20px 0;
+    background: var(--mainBgColor);
+    position: relative;
+}
 
+@media(max-width:600px){
+    .swiper-container {
+        height: 300px;
+    }
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    background: var(--mainBgColor);
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
 .swiper-slide img {
-    width: auto;
+    width: 100%;
     height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 40px !important;
+    height: 40px !important;
+    margin-top: -20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.85;
+}
+
+.swiper-container:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+[data-theme="dark"] .swiper-button-next,
+[data-theme="dark"] .swiper-button-prev {
+    background: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+[data-theme="dark"] .swiper-button-next svg,
+[data-theme="dark"] .swiper-button-prev svg {
+    stroke: #ccc;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .swiper-button-next:hover,
+[data-theme="dark"] .swiper-button-prev:hover {
+    background: rgba(60, 60, 60, 0.95);
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+    transform: scale(0.9);
+    margin-top: -18px;
+}
+
+.swiper-button-next {
+    right: 8px !important;
+}
+
+.swiper-button-prev {
+    left: 8px !important;
+}
+
+@media(max-width:600px){
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 34px !important;
+        height: 34px !important;
+        margin-top: -17px;
+        opacity: 1;
+        border-radius: 6px;
+    }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .swiper-button-next {
+        right: 4px !important;
+    }
+
+    .swiper-button-prev {
+        left: 4px !important;
+    }
+
+    .swiper-slide img {
+        padding: 4px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--mainLinkColor) !important;
+}
+
+.swiper-pagination-bullet {
+    background: var(--secondaryTextColor);
+    opacity: 0.6;
 }
