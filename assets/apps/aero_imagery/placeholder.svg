@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <circle cx="200" cy="120" r="50" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M200 70 L200 170 M150 120 L250 120" stroke="#e94560" stroke-width="2"/>
+  <polygon points="200,45 185,85 215,85" fill="#e94560"/>
+  <polygon points="245,120 205,105 205,135" fill="#e94560"/>
+  <polygon points="155,120 195,105 195,135" fill="#e94560"/>
+  <polygon points="200,195 185,155 215,155" fill="#e94560"/>
+  <text x="200" y="230" text-anchor="middle" fill="#e94560" font-family="Arial" font-size="16" font-weight="bold">Aero Imagery</text>
+  <text x="200" y="255" text-anchor="middle" fill="#888" font-family="Arial" font-size="11">Screenshot coming soon</text>
+</svg>

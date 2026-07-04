@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FFF8F9"/>
+  <circle cx="200" cy="100" r="40" fill="none" stroke="#A30015" stroke-width="2"/>
+  <path d="M185 90 Q200 75 215 90" stroke="#A30015" stroke-width="2" fill="none"/>
+  <circle cx="192" cy="95" r="3" fill="#A30015"/>
+  <circle cx="208" cy="95" r="3" fill="#A30015"/>
+  <rect x="160" y="155" width="80" height="80" rx="8" fill="none" stroke="#5489A1" stroke-width="2"/>
+  <line x1="170" y1="175" x2="230" y2="175" stroke="#5489A1" stroke-width="1.5"/>
+  <line x1="170" y1="190" x2="220" y2="190" stroke="#5489A1" stroke-width="1.5"/>
+  <line x1="170" y1="205" x2="210" y2="205" stroke="#5489A1" stroke-width="1.5"/>
+  <line x1="170" y1="220" x2="225" y2="220" stroke="#5489A1" stroke-width="1.5"/>
+  <text x="200" y="270" text-anchor="middle" fill="#A30015" font-family="Arial" font-size="16" font-weight="bold">BeautyHub (Eva)</text>
+  <text x="200" y="288" text-anchor="middle" fill="#888" font-family="Arial" font-size="11">Screenshot coming soon</text>
+</svg>

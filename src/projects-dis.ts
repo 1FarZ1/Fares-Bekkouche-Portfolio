@@ -75,9 +75,12 @@ export function loadProjects(): void {
     `;
     document.head.appendChild(styleElement);
     
-    for (const key in projects) {
-      if (projects.hasOwnProperty(key)) {
-        const project = projects[key];
+    const sorted = Object.keys(projects)
+      .filter(key => projects.hasOwnProperty(key))
+      .map(key => ({ key, project: projects[key] }))
+      .sort((a, b) => (a.project.order || 99) - (b.project.order || 99));
+
+    for (const { key, project } of sorted) {
         
         const cardDiv = document.createElement('div');
         cardDiv.className = 'card--project';
@@ -117,7 +120,6 @@ export function loadProjects(): void {
         cardDiv.appendChild(link);
         
         gridContainer.appendChild(cardDiv);
-      }
     }
     
   } catch (error) {

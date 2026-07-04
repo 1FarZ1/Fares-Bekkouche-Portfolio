@@ -1,6 +1,7 @@
 export const projects = {
       "tayssir": {
         title: "Tayssir - Baccalaureate Exam Preparation App",
+        order: 1,
         demoLink: "https://play.google.com/store/apps/details?id=com.tayssir.bac",
         codeLink: "#",
         sourceType: "closed",
@@ -22,6 +23,7 @@ export const projects = {
     },
     "viralBetApp": {
         title: "Pronox App - Developed a game betting application",
+        order: 4,
         demoLink: "https://play.google.com/store/apps/details?id=com.pronox.apk",
         codeLink: "#",
         sourceType: "closed",
@@ -43,6 +45,7 @@ export const projects = {
     },
     "MyFitTool": {
         title: "MyFitTool - Advanced Fitness Tracking & Progress Enhancement App",
+        order: 2,
         demoLink: "https://play.google.com/store/apps/details?id=com.myfittool.app",
         codeLink: "#",
         sourceType: "closed",
@@ -66,6 +69,7 @@ export const projects = {
     },
      "equitas": {
         title: "Equitas - Islamophobia Reporting Application",
+        order: 5,
         demoLink: "https://play.google.com/store/apps/details?id=com.equitas.mobile",
         codeLink: "#",
         sourceType: "closed",
@@ -93,8 +97,33 @@ export const projects = {
         ]
     },
    
+    "eva": {
+        title: "BeautyHub (Eva) - Dual-Role Beauty Service Marketplace",
+        order: 7,
+        demoLink: "#",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: false,
+        description: "A dual-role marketplace connecting beauty service professionals with customers. Built with Flutter, Riverpod, GoRouter, and a layered architecture with Firebase and Moyasar payments.",
+        details: [
+            "Built with Flutter using layered architecture with Riverpod 3.x and code generation via Freezed",
+            "Dual-role system: customer side (14 features) and barber/salon side (8 features) in one codebase",
+            "Phone + OTP authentication with SMS auto-retrieval and role-based onboarding flows",
+            "Customer features: interactive map discovery, booking flow, wallet, reviews, favorites",
+            "Barber features: appointment management, weekly calendar, services CRUD, portfolio and dashboard",
+            "Google Maps integration with clustered salon markers and location-based search with filters",
+            "Payment processing through Moyasar gateway with multi-step booking and checkout flow",
+            "GoRouter with 30+ named routes, StatefulShellRoute for tab navigation, and smart redirect guards",
+            "Dual-brand theming (red for customers, teal for barbers) with full typography system",
+            "i18n with English and Arabic (RTL), push notifications via FCM, and secure token storage"
+        ],
+        images: [
+            "eva/placeholder.svg",
+        ]
+    },
     "ouhraniaagtou": {
         title: "Ouhraniaagrou - Market eCommerce Application",
+        order: 8,
         demoLink: "#",
         codeLink: "#",
         sourceType: "closed",
@@ -113,6 +142,7 @@ export const projects = {
    
     "btpWin": {
         title: "BTP Win - Developed a BTP app",
+        order: 9,
         demoLink: "#",
         codeLink: "#",
         sourceType: "closed",
@@ -127,6 +157,7 @@ export const projects = {
     },
     "animeDragon": {
         title: "Anime Dragon - Full-stack anime streaming app",
+        order: 10,
         demoLink: "#",
         codeLink: "https://github.com/1FarZ1/Anime-Dragon-App",
         sourceType: "open",
@@ -143,6 +174,7 @@ export const projects = {
     },
     "lawyerAppointment": {
         title: "Lawyer Appointment Backend - App for lawyer appointments",
+        order: 11,
         demoLink: "#",
         codeLink: "#",
         sourceType: "open",
@@ -156,8 +188,59 @@ export const projects = {
             ""
         ]
     },
+    "aeroImagery": {
+        title: "Aero Imagery - Dual-Role Drone Marketplace",
+        order: 3,
+        demoLink: "#",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: false,
+        description: "A dual-role marketplace connecting customers with licensed drone pilots for aerial imagery services. Built with Flutter, Riverpod 3.x, Clean Architecture, and a custom NestJS backend with Firebase services.",
+        details: [
+            "Built with Flutter using Clean Architecture (Feature-First) with Riverpod 3.x for state management",
+            "Extensive code generation using Freezed, json_serializable, and Riverpod annotations",
+            "Custom NestJS REST API backend with Firebase Authentication, Firestore, Cloud Messaging, and Storage",
+            "Dual-role system: Customers browse/search pilots, book jobs, and manage the full job lifecycle",
+            "Pilot features: job discovery, bidding, portfolio/equipment management, and weather resources",
+            "Real-time chat powered by Cloud Firestore with rich media sharing and preview",
+            "Complete job lifecycle state machine with dispute resolution and cancellation handling",
+            "Stripe payment integration with in-app wallet, KYC verification, and RevenueCat subscriptions",
+            "Advanced search with location-based filtering, Google Maps integration, and geocoding",
+            "Push notifications via FCM with deep linking and contextual navigation",
+            "Multi-method authentication with onboarding wizard: Email, Phone OTP, Google, and Apple Sign-In",
+            "Post-completion ratings & reputation system with review history on pilot profiles"
+        ],
+        images: [
+            "aero_imagery/placeholder.svg",
+        ]
+    },
+    "chessIt": {
+        title: "Chess App - Real-Time Online Chess with Video Chat",
+        order: 6,
+        demoLink: "#",
+        codeLink: "#",
+        sourceType: "closed",
+        hasDemo: false,
+        description: "A full-stack mobile chess application built with Flutter featuring real-time online gameplay with integrated LiveKit video/audio chat and server-authoritative move validation.",
+        details: [
+            "Built with Flutter using Feature-First architecture and Riverpod 3.x for state management",
+            "Real-time chess gameplay via Socket.IO with server-authoritative move validation preventing cheating",
+            "Integrated LiveKit video/audio chat directly in the game screen with camera/mic controls",
+            "Matchmaking system with animated search UI and automatic game session creation",
+            "Interactive chess board powered by chessground with drag-and-drop, FEN tracking, and clock timers",
+            "Email/password authentication with encrypted token storage and auto-refresh interceptor",
+            "GoRouter with deep linking, auth-aware route guards, and bottom navigation",
+            "Robust networking layer with centralized Dio client, typed AppException handling, and toast notifications",
+            "Dark theme with responsive layouts via flutter_screenutil and skeleton loading placeholders",
+            "Developer tooling: structured logging, collapsible debug panel, socket event observability, and custom CLI scripts"
+        ],
+        images: [
+            "chess_it/placeholder.svg",
+        ]
+    },
     "ebuildingDz": {
         title: "Ebuilding DZ App - Matching service providers with clients",
+        order: 12,
         demoLink: "#",
         codeLink: "#",
         sourceType: "closed",

@@ -68,39 +68,40 @@ export function loadProjects() {
       }
     `;
         document.head.appendChild(styleElement);
-        for (const key in projects) {
-            if (projects.hasOwnProperty(key)) {
-                const project = projects[key];
-                const cardDiv = document.createElement('div');
-                cardDiv.className = 'card--project';
-                const link = document.createElement('a');
-                link.href = `./views/project.html#${key}`;
-                const imageContainer = document.createElement('div');
-                const img = document.createElement('img');
-                if (project.images && project.images.length > 0 && project.images[0] !== "") {
-                    img.src = `./assets/apps/${project.images[0]}`;
-                }
-                else {
-                    img.src = "./assets/images/placeholder.png";
-                }
-                img.alt = project.title;
-                imageContainer.appendChild(img);
-                const contentDiv = document.createElement('div');
-                contentDiv.className = 'project-content';
-                const title = document.createElement('h3');
-                title.textContent = project.title;
-                const description = document.createElement('p');
-                description.textContent = project.description;
-                const trophy = document.createElement('span');
-                trophy.textContent = '🏆 ';
-                title.insertBefore(trophy, title.firstChild);
-                contentDiv.appendChild(title);
-                contentDiv.appendChild(description);
-                link.appendChild(imageContainer);
-                link.appendChild(contentDiv);
-                cardDiv.appendChild(link);
-                gridContainer.appendChild(cardDiv);
+        const sorted = Object.keys(projects)
+            .filter(key => projects.hasOwnProperty(key))
+            .map(key => ({ key, project: projects[key] }))
+            .sort((a, b) => (a.project.order || 99) - (b.project.order || 99));
+        for (const { key, project } of sorted) {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card--project';
+            const link = document.createElement('a');
+            link.href = `./views/project.html#${key}`;
+            const imageContainer = document.createElement('div');
+            const img = document.createElement('img');
+            if (project.images && project.images.length > 0 && project.images[0] !== "") {
+                img.src = `./assets/apps/${project.images[0]}`;
             }
+            else {
+                img.src = "./assets/images/placeholder.png";
+            }
+            img.alt = project.title;
+            imageContainer.appendChild(img);
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'project-content';
+            const title = document.createElement('h3');
+            title.textContent = project.title;
+            const description = document.createElement('p');
+            description.textContent = project.description;
+            const trophy = document.createElement('span');
+            trophy.textContent = '🏆 ';
+            title.insertBefore(trophy, title.firstChild);
+            contentDiv.appendChild(title);
+            contentDiv.appendChild(description);
+            link.appendChild(imageContainer);
+            link.appendChild(contentDiv);
+            cardDiv.appendChild(link);
+            gridContainer.appendChild(cardDiv);
         }
     }
     catch (error) {
