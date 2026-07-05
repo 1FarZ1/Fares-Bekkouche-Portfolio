@@ -100,10 +100,10 @@ export const projects = {
     "eva": {
         title: "BeautyHub (Eva) - Dual-Role Beauty Service Marketplace",
         order: 7,
-        demoLink: "#",
+        demoLink: "https://play.google.com/store/apps/details?id=sa.newmedia.eva",
         codeLink: "#",
         sourceType: "closed",
-        hasDemo: false,
+        hasDemo: true,
         description: "A dual-role marketplace connecting beauty service professionals with customers. Built with Flutter, Riverpod, GoRouter, and a layered architecture with Firebase and Moyasar payments.",
         details: [
             "Built with Flutter using layered architecture with Riverpod 3.x and code generation via Freezed",
@@ -191,10 +191,10 @@ export const projects = {
     "aeroImagery": {
         title: "Aero Imagery - Dual-Role Drone Marketplace",
         order: 3,
-        demoLink: "#",
+        demoLink: "https://play.google.com/store/apps/details?id=com.aero.imagery",
         codeLink: "#",
         sourceType: "closed",
-        hasDemo: false,
+        hasDemo: true,
         description: "A dual-role marketplace connecting customers with licensed drone pilots for aerial imagery services. Built with Flutter, Riverpod 3.x, Clean Architecture, and a custom NestJS backend with Firebase services.",
         details: [
             "Built with Flutter using Clean Architecture (Feature-First) with Riverpod 3.x for state management",
