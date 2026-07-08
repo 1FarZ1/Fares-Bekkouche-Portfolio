@@ -106,7 +106,7 @@ export const projects = {
         hasDemo: true,
         description: "A dual-role marketplace connecting beauty service professionals with customers. Built with Flutter, Riverpod, GoRouter, and a layered architecture with Firebase and Moyasar payments.",
         details: [
-            "Built with Flutter using layered architecture with Riverpod 3.x and code generation via Freezed",
+            "Built With Flutter using layered architecture with Riverpod 3.x and code generation via Freezed",
             "Dual-role system: customer side (14 features) and barber/salon side (8 features) in one codebase",
             "Phone + OTP authentication with SMS auto-retrieval and role-based onboarding flows",
             "Customer features: interactive map discovery, booking flow, wallet, reviews, favorites",
