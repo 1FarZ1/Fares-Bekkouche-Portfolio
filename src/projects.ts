@@ -118,7 +118,7 @@ export const projects = {
             "i18n with English and Arabic (RTL), push notifications via FCM, and secure token storage"
         ],
         images: [
-            "eva/placeholder.svg",
+            "eva/eva.png",
         ]
     },
     "ouhraniaagtou": {
@@ -211,7 +211,7 @@ export const projects = {
             "Post-completion ratings & reputation system with review history on pilot profiles"
         ],
         images: [
-            "aero_imagery/placeholder.svg",
+            "aero_imagery/aero imagery.png",
         ]
     },
     "chessIt": {
